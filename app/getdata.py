@@ -1,6 +1,15 @@
 import requests
 
 def getData(URL):
+    """ Return list that contained several lists,
+        these list are resources to DataFrame.
+        
+        arg :
+            URL is a variable that contained link  url from 
+            https://covid19.patria.org.ve/api/v1/timeline.
+            
+        """
+    
     r = requests.get(URL)
     data = r.json()
     Date = []
