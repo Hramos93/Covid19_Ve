@@ -1,0 +1,23 @@
+.nav {
+    background: rgb(240, 229, 199);
+}
+
+.nav a {
+    color: rgb(5, 5, 5);
+}
+
+.table {
+    position: fixed;
+    top: 3rem;
+}
+
+thead,
+tbody tr {
+    color: black;
+}
+
+.graph .Lines {
+    position: relative;
+    top: 400px;
+    border: none;
+}
