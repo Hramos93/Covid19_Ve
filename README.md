@@ -6,6 +6,6 @@ This is a Repository where I going to upload processing data of Covid in Venezue
 URL = 'https://covid19.patria.org.ve/api/v1/timeline'
 ```
 
-Example table displayed
+Example of DataFrame displayed
 
 ![](images/Example.JPG)
