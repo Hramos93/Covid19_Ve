@@ -49,19 +49,35 @@ body {
 
 thead,
 tbody tr {
-    color: black;
+    color: #fff;
 }
 
-.table_2 {
+tr th {
+    color: #fff;
+}
+
+th {
+    background-color: black;
+}
+
+.cases {
     position: absolute;
     top: 5rem;
     right: 3rem;
     padding: 0.5rem;
-    background: rgb(189, 187, 187);
+    background: #3b434b;
     border-radius: 10px;
 }
 
 .table_2 h2 {
+    color: rgb(224, 153, 20);
+}
+
+.recovered h2 {
+    color: rgb(38, 226, 32);
+}
+
+.Cases h2 {
     color: red;
 }
 

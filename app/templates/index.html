@@ -7,9 +7,16 @@
     <h2> General table</h2>
     {% for table in tables %} {{ table|safe }} {% endfor %}
 </div>
-{% endblock %} {% block table_2 %}
+{% endblock %} {% block Cases %}
 <div class="table_2">
-    <h2> Total: {{max_Count.Confirmed_Count}} </h2>
-
+    <h2> Cases: {{max_Count.Confirmed_Count}} </h2>
+</div>
+{% endblock %} {% block Deaths %}
+<div class="Cases">
+    <h2> Death: {{deathsCount.deaths}} </h2>
+</div>
+{% endblock %}{% block Recovered %}
+<div class="recovered">
+    <h2> recovered: {{recovered.recovered}} </h2>
 </div>
 {% endblock %}

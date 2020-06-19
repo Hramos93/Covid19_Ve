@@ -2,6 +2,7 @@ from app.getdata import getData
 import pandas as pd 
 import seaborn as sns
 import matplotlib.pyplot as plt
+from datetime import datetime
 
 
 URL = 'https://covid19.patria.org.ve/api/v1/timeline'
@@ -10,8 +11,7 @@ df = pd.DataFrame(getData(URL), columns=['Date','DateTS','Confirmed_Count','Conf
     'Recovered_New','Deaths_Count','Deaths_New','Active_Count'])
 df = df.drop(['DateTS','Recovered_New','Deaths_New','Active_Count'], axis=1)
 head = df.tail()
-
-
+now = datetime.utcnow().strftime('%B %d %Y' )
 
 
 """
