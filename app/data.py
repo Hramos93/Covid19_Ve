@@ -10,7 +10,8 @@ URL = 'https://covid19.patria.org.ve/api/v1/timeline'
 df = pd.DataFrame(getData(URL), columns=['Date','DateTS','Confirmed_Count','Confirmed_New','Recovered_Count',\
     'Recovered_New','Deaths_Count','Deaths_New','Active_Count'])
 df = df.drop(['DateTS','Recovered_New','Deaths_New','Active_Count'], axis=1)
-head = df.tail()
+
+df_tail = df.tail()
 now = datetime.utcnow().strftime('%B %d %Y' )
 
 

@@ -1,3 +1,9 @@
+:root {
+    --color_a: rgb(255, 248, 248);
+    --font_titles: "Anton", sans-serif;
+    --size_titles: 30px;
+}
+
 table,
 caption,
 tbody,
@@ -19,22 +25,21 @@ body {
 }
 
 .nav {
-    display: block;
     height: 4rem;
-    background: rgb(240, 229, 199);
+    background: rgb(20, 20, 20);
+    border: 1px white;
 }
 
 .nav a {
-    color: rgb(5, 5, 5);
-    position: relative;
+    color: var(--color_a);
+    font-family: var(--font_titles);
+    font-size: var(--size_titles);
     top: 1.5rem;
-    font-size: 20px;
 }
 
 .table {
     display: inline;
     position: relative;
-    top: 4rem;
     left: 0;
     border-spacing: 0.5rem;
     border-collapse: collapse;
@@ -43,7 +48,7 @@ body {
 .table h2 {
     position: absolute;
     display: inline;
-    left: 18%;
+    left: 40%;
     padding: 0.5rem;
 }
 
@@ -62,8 +67,8 @@ th {
 
 .cases {
     position: absolute;
-    top: 5rem;
-    right: 3rem;
+    top: 4rem;
+    right: 25%;
     padding: 0.5rem;
     background: #3b434b;
     border-radius: 10px;
@@ -84,6 +89,21 @@ th {
 .date {
     display: inline;
     position: absolute;
-    top: 0px;
+    top: 1rem;
     left: 40%;
+    color: var(--color_a);
+    font-family: var(--font_titles);
+    font-size: var(--size_titles);
+}
+
+
+/* buttom*/
+
+.buttom {
+    position: relative;
+    top: 8rem;
+}
+
+#form1 {
+    display: none;
 }

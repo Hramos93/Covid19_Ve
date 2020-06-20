@@ -13,6 +13,6 @@ def index():
     time = {'now': now} 
     deathsCount = {'deaths': df['Deaths_Count'].max()}
     recovered= {'recovered': df['Recovered_Count'].max()}
-    return render_template('index.html', tables = [head.to_html(classes='table table-striped')], time = time, max_Count=max_Count, deathsCount=deathsCount,recovered=recovered)
+    return render_template('index.html', tables = [df_tail.to_html(classes='table table-striped')], time = time, max_Count=max_Count, deathsCount=deathsCount,recovered=recovered)
 
 
