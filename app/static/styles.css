@@ -65,25 +65,62 @@ th {
     background-color: black;
 }
 
-.cases {
+
+/* Cuadro de Casos */
+
+.General {
     position: absolute;
     top: 4rem;
-    right: 25%;
-    padding: 0.5rem;
+    right: 1rem;
+    width: 500px;
+    height: 300px;
     background: #3b434b;
     border-radius: 10px;
 }
 
-.table_2 h2 {
+.Cases h2 {
+    background-color: rgb(72, 81, 92);
     color: rgb(224, 153, 20);
+    display: inline;
+    padding: 0.2rem;
+    border-radius: 10px;
+    position: relative;
+    top: 8rem;
+    font-family: var(--font_titles);
 }
 
 .recovered h2 {
+    background-color: #fff;
     color: rgb(38, 226, 32);
+    display: inline;
+    padding: 0.2rem;
+    border-radius: 10px;
+    position: relative;
+    top: 0.1rem;
+    right: -250px;
+    font-family: var(--font_titles);
 }
 
-.Cases h2 {
+.Death h2 {
+    background-color: #fff;
     color: red;
+    display: inline;
+    padding: 0.2rem;
+    border-radius: 10px;
+    position: relative;
+    top: 10rem;
+    right: -250px;
+    font-family: var(--font_titles);
+}
+
+.Death h2 {
+    background-color: #fff;
+    color: red;
+    display: inline;
+    padding: 0.2rem;
+    border-radius: 10px;
+    position: relative;
+    top: 8rem;
 }
 
 .date {
@@ -94,6 +131,21 @@ th {
     color: var(--color_a);
     font-family: var(--font_titles);
     font-size: var(--size_titles);
+}
+
+
+/* Image Grahp*/
+
+.graph {
+    margin-top: 2rem;
+    display: block;
+    background-color: black;
+    height: 800px;
+}
+
+.graph img {
+    position: relative;
+    width: 600px;
 }
 
 

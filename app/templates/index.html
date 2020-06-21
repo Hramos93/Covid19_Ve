@@ -6,16 +6,26 @@
 <div class="table">
     {% for table in tables %} {{ table|safe }} {% endfor %}
 </div>
-{% endblock %} {% block Cases %}
-<div class="table_2">
+{% endblock %}
+
+<!-- Total de casos -->{% block Cases %}
+<div class="Cases">
     <h2> Cases: {{max_Count.Confirmed_Count}} </h2>
 </div>
-{% endblock %} {% block Deaths %}
-<div class="Cases">
+{% endblock %}
+<!-- Fin Total de casos -->
+<!-- Total de Fallecidos -->{% block Deaths %}
+<div class="Death">
     <h2> Death: {{deathsCount.deaths}} </h2>
 </div>
-{% endblock %}{% block Recovered %}
+{% endblock %}
+<!-- Fin del total de Fallecidos -->
+<!-- Total Recuperados -->{% block Recovered %}
 <div class="recovered">
     <h2> recovered: {{recovered.recovered}} </h2>
 </div>
 {% endblock %}
+<!-- Fin del total de Recuperados -->{% block Graph %}
+<div class="graph">
+    <img src="{{url_for('static', filename='graph.png')}}" />
+</div>{% endblock %}
