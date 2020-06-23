@@ -2,6 +2,7 @@
     --color_a: rgb(255, 248, 248);
     --font_titles: "Anton", sans-serif;
     --size_titles: 30px;
+    --color_h2: #fff;
 }
 
 table,
@@ -74,54 +75,60 @@ th {
     right: 1rem;
     width: 500px;
     height: 300px;
-    background: #3b434b;
+    background: rgb(249,249,249);
+    background: radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(52,58,64,1) 65%);
     border-radius: 10px;
 }
 
-.Cases h2 {
-    background-color: rgb(72, 81, 92);
-    color: rgb(224, 153, 20);
-    display: inline;
+.Cases {
+    position: relative;
+    top: 1rem;
+    background: rgb(242,182,25);
+    background: radial-gradient(circle, rgba(242,182,25,1) 8%, rgba(233,176,148,1) 65%);
+    height: 100px;
     padding: 0.2rem;
     border-radius: 10px;
-    position: relative;
-    top: 8rem;
+    
+}
+.Cases h2{
+    display: inline-block;
     font-family: var(--font_titles);
+    color: var(--color_h2);
 }
 
-.recovered h2 {
-    background-color: #fff;
-    color: rgb(38, 226, 32);
-    display: inline;
+.recovered {
+    position: relative;
+    margin-top: -5.40rem;
+    background: rgb(23,125,157);
+    background: linear-gradient(90deg, rgba(23,125,157,1) 40%, rgba(71,121,242,1) 96%);
+    height: 100px;
     padding: 0.2rem;
     border-radius: 10px;
-    position: relative;
-    top: 0.1rem;
-    right: -250px;
+        
+}
+.recovered h2{
+    display: inline-block;
     font-family: var(--font_titles);
+    color: var(--color_h2);
 }
 
-.Death h2 {
-    background-color: #fff;
-    color: red;
-    display: inline;
+.Death  {
+    position: relative;
+    top: 7rem;
+    background: rgb(157,54,23);
+    background: linear-gradient(90deg, rgba(157,54,23,1) 40%, rgba(242,71,80,1) 96%);
+    height: 100px;
     padding: 0.2rem;
     border-radius: 10px;
-    position: relative;
-    top: 10rem;
-    right: -250px;
+    
+}
+.Death h2{
+    display: inline-block;
     font-family: var(--font_titles);
+    color: var(--color_h2);
+    font-size: 30px;
 }
 
-.Death h2 {
-    background-color: #fff;
-    color: red;
-    display: inline;
-    padding: 0.2rem;
-    border-radius: 10px;
-    position: relative;
-    top: 8rem;
-}
 
 .date {
     display: inline;
@@ -136,18 +143,20 @@ th {
 
 /* Image Grahp*/
 
-.graph {
-    margin-top: 2rem;
-    display: block;
+.Container {
+    margin-top: 1rem;
     background-color: black;
-    height: 800px;
+    
 }
-
-.graph img {
-    position: relative;
-    width: 600px;
+.graph {
+    position:relative;
+    display:inline-block;
 }
-
+.graph_log {
+    position:absoulte;
+    display:inline-block;
+    
+}
 
 /* buttom*/
 

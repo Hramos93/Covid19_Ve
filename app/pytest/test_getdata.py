@@ -1,6 +1,6 @@
 import requests
 
-def getData(URL):
+def test_getData(URL):
     
     """ Return list that contained several lists,
         these list are resources to DataFrame.
@@ -38,5 +38,4 @@ def getData(URL):
     for i in range(len(data)):
         Active_Count.append(data[i]['Active']['Count'])
     x = list(zip(Date,DateTS,Confirmed_Count,Confirmed_New,Recovered_Count,Recovered_New,Deaths_Count,Deaths_New,Active_Count))
-    return x
-
+    assert type(x) == list
